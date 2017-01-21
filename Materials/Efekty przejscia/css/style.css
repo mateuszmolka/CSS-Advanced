@@ -6,16 +6,17 @@
     -webkit-transition: 3s ease-out;
     -o-transition: 3s ease-out ;
     transition: 3s ease-out; 
-    background-color: red;
 }
 #box1{
-   background-color: black 
+   background-color: black;
 }
 #box2{
     background-color: blue;
 }
 #box3{
-    background-color: yellow;
+    background-image: url(../images/hypnose.jpeg);
+    width: 500px;
+    height: 500px;
 }
 
 #box1:hover{
@@ -25,10 +26,8 @@
     height: 300px;
 }
 #box3:hover{
-    height: 300px;
-    width: 300px;
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg) translate(-200px, -200px);
+    transform: rotate(180deg));
     
 }
