@@ -20,3 +20,43 @@
 #p5::selection{
     background-color: blue;
 }
+a{
+    text-decoration: none;
+}
+a:link{
+    background-color: blueviolet;
+}
+a:visited{
+    color:orange;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*a:active{
+    font-weight: bold;
+}
+a:focus{
+    color: firebrick;
+}
+*/
+#p1:target{
+    display: none;
+}
+
+p:lang(pl){
+    font-style: italic;
+    color: yellow;
+}
+div.klient:nth-child(odd){
+    background-color: beige;
+}
+div.klient:nth-child(even){
+    background-color: hotpink;
+}
+div.klient:first-child{
+    background-color: white;
+}
+
+div.klient:nth-child(5n+4){
+    background-color: black;
+}
