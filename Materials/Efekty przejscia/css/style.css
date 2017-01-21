@@ -1,0 +1,34 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px dashed blue;
+    margin: 20px;
+    -webkit-transition: 3s ease-out;
+    -o-transition: 3s ease-out ;
+    transition: 3s ease-out; 
+    background-color: red;
+}
+#box1{
+   background-color: black 
+}
+#box2{
+    background-color: blue;
+}
+#box3{
+    background-color: yellow;
+}
+
+#box1:hover{
+    width: 300px;
+}
+#box2:hover{
+    height: 300px;
+}
+#box3:hover{
+    height: 300px;
+    width: 300px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg) translate(-200px, -200px);
+    
+}
