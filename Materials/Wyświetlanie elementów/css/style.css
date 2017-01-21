@@ -1,62 +1,32 @@
-*{
-    color: violet;
+#p1{
+    background-color: skyblue;
 }
-#p1::before{
-    content: "Przed elementem :)";
-    color: green;
-    font-weight: bold;
+
+#p2{
+    background-color: indianred;
 }
-#p2::after{
-    content: " Za elementem :)";
-    color: red;
+
+#elementy-liniowe p{
+    display: inline;
 }
-#p3::first-letter{
-    color: deeppink;
-    text-transform: uppercase;
+
+#inline-p1{
+    background-color: greenyellow;
 }
-#p4::first-line{
-    background-color: yellow;
+
+#inline-p2{
+    background-color: mediumvioletred;
 }
-#p5::selection{
-    background-color: blue;
+
+#elementy-inline-block li{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    background-color: aquamarine;
+    border: 1px black dotted;
 }
-a{
-    text-decoration: none;
-}
-a:link{
-    background-color: blueviolet;
-}
-a:visited{
-    color:orange;
-}
-a:hover{
-    text-decoration: underline;
-}
-/*a:active{
-    font-weight: bold;
-}
-a:focus{
-    color: firebrick;
-}
-*/
-#p1:target{
+
+#element-display-none > p {
     display: none;
-}
-
-p:lang(pl){
-    font-style: italic;
-    color: yellow;
-}
-div.klient:nth-child(odd){
-    background-color: beige;
-}
-div.klient:nth-child(even){
-    background-color: hotpink;
-}
-div.klient:first-child{
-    background-color: white;
-}
-
-div.klient:nth-child(5n+4){
-    background-color: black;
 }
