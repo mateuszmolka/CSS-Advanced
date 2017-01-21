@@ -1,62 +1,43 @@
 *{
-    color: violet;
+    color:white;
+    font-size: 20px;
 }
-#p1::before{
-    content: "Przed elementem :)";
-    color: green;
-    font-weight: bold;
+
+input[type="text"],input[type="email"],input[type="tel"],select[name="City"], textarea{
+    width: 100%;
 }
-#p2::after{
-    content: " Za elementem :)";
-    color: red;
+
+
+form{
+    width: 100vh;
+    background-color: #213b50;
+    padding: 40px;
+    position: relative;
 }
-#p3::first-letter{
-    color: deeppink;
+
+
+input, textarea, select, textarea{
+    background-color: #2b4a64;
+    border-style: none;
+}
+
+select:focus,input:focus, textarea:focus{
+    background-color: #4e708c;
+    border: solid 1px;
+    border-color: #ffffff;
+}
+
+
+#styl{
+    position: absolute;
+    width: 30%
+}
+
+input[type="submit"]{
+    background-color: greenyellow;
     text-transform: uppercase;
-}
-#p4::first-line{
-    background-color: yellow;
-}
-#p5::selection{
-    background-color: blue;
-}
-a{
-    text-decoration: none;
-}
-a:link{
-    background-color: blueviolet;
-}
-a:visited{
-    color:orange;
-}
-a:hover{
-    text-decoration: underline;
-}
-/*a:active{
     font-weight: bold;
-}
-a:focus{
-    color: firebrick;
-}
-*/
-#p1:target{
-    display: none;
+    padding: 2% 3% 2% 3%;
 }
 
-p:lang(pl){
-    font-style: italic;
-    color: yellow;
-}
-div.klient:nth-child(odd){
-    background-color: beige;
-}
-div.klient:nth-child(even){
-    background-color: hotpink;
-}
-div.klient:first-child{
-    background-color: white;
-}
 
-div.klient:nth-child(5n+4){
-    background-color: black;
-}
