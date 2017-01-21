@@ -1,0 +1,19 @@
+img#truskawka1 {
+    float: left;
+}
+
+img#truskawka2 {
+    float: right;
+}
+
+img {
+    clear: both;
+}
+
+p:last-child {
+    background-color: rgba(255, 0, 0, 0.6);
+    clear: right;
+}
+#p2{
+    float: right;
+}
