@@ -1,45 +1,301 @@
-*{
-    color:white;
-    font-size: 20px;
+/*main styles*/
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
-input[type="text"],input[type="email"],input[type="tel"],select[name="City"], textarea{
+body {
+    margin: 0px; 
+}
+
+span{
+    color: #1ac056;
+    background: none;
+    font-weight: bold;
+    
+}
+section{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h2{
+    color: #291f1a;
+    text-align: center;
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+}
+/*top bar navigation styles*/
+nav{
+    background-color: white;
     width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+nav>ul{
+    text-align: right;
+}
+nav>ul>.top-menu-item{
+    display: inline-block;
+    padding: 1% 3% 1% 3%;
+    
+}
+nav>ul>.top-menu-item>a{
+    text-decoration: none;
+    color: #1ac056;
+}
+nav>ul>.top-menu-item>a:hover{
+    color: black;
 }
 
 
-form{
-    width: 50%;
-    height: 50%;
-    background-color: #213b50;
-    padding: 10px;
+/*header styles*/
+#main-header-section{
+    background-image: url(../img/header-background.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 85vh;
     position: relative;
 }
+#name-surname-header{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: none;
+}
+h1{    
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    background: none;
+}
+h1>span{
+    font-weight: 700;
+    
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: normal;
+    font-weight: 300;
+    background: none;
+}
 
 
-input, textarea, select, textarea{
-    background-color: #2b4a64;
-    border-style: none;
+/*About me styles*/
+#section-about-me{
+    box-shadow: 0 9px 2px -2px #D3D3D3;
+    overflow: auto;
+    padding-bottom: 10%;
+    margin-bottom: 2%;
+    padding-left: 0;
+    background-color: #f9fcfe;
+}
+h2#header-about-me{
+    
+    color: #291f1a;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+.about-me-50-50{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #291f1a;
+   
+}
+
+.about-me-50-50>img{
+    width: 50%;
+    border: white solid 20px;
+    border-radius: 5%;
+}
+.about-text-50-50{
+    text-align: left;
+}
+figcapture{
+    color: #291f1a;
+}
+
+/*My skills*/
+section#my-skills{
+    overflow: auto;
+}
+h2#my-skills-header{
+    color: #291f1a;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+#my-skills-article{ 
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 2%;
+    color: #291f1a;
+}
+#my-skills-icons{
+    margin: 20px;
+    text-align: center;
+}
+.icon-plus-label{
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+}
+.icon-plus-label>h3{
+    text-align: center;
+}
+img.img-skills{
+    display: block;
+}
+/*My portfolio styles*/
+#my-portfolio{
+    margin-bottom: 5%;
+}
+h2#my-portfolio-header{
+    color: #291f1a;
+    text-align: center;
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    overflow: auto;
+}
+#my-portfolio-items{
+    text-align: center;
+    font-size: 0;
     margin-bottom: 2%;
 }
-
-select:focus,input:focus, textarea:focus{
-    background-color: #4e708c;
-    border: solid 1px;
-    border-color: #ffffff;
+#my-portfolio-items>.portfolio-item{
+    display: inline-block;
+    width: 33%;
+    height: 350px;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;
+    position: relative;
+    font-size: initial;
 }
 
-
-#styl{
+#my-portfolio-items>.portfolio-item>.portfolio-item-mask{
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(33, 59, 80,0.5);   
+    opacity: 0;
     position: absolute;
-    width: 30%
+    transition: all 0.3s;
+
+}
+#my-portfolio-items>.portfolio-item>.portfolio-item-mask>.portfolio-item-mask-frame{
+    width: 95%;
+    height: 95%;
+    border: 1px solid white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#my-portfolio-items>.portfolio-item>.portfolio-item-mask>.portfolio-item-mask-frame>.portfolio-item-mask-frame-text{
+    text-align: center;
+    
 }
 
-input[type="submit"]{
-    background-color: greenyellow;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 2% 3% 2% 3%;
+#my-portfolio-items>.portfolio-item>.portfolio-item-mask>.portfolio-item-mask-frame>.portfolio-item-mask-frame-text>i:hover{
+    color:green;
+}
+
+#my-portfolio-items>.portfolio-item>.portfolio-item-mask:hover{
+   opacity: 1;
 }
 
 
+
+
+
+
+
+#my-portfolio-items>#my-portfolio-image-1{
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#my-portfolio-items>#my-portfolio-image-2{
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#my-portfolio-items>#my-portfolio-image-3{
+    background-image: url(../img/portfolio4.jpg);
+}
+
+/*Contact menu*/
+div#contact-container{
+    background-color: #213b50;
+    width:100%;
+    height: 55%;
+    overflow: auto;
+}
+address{
+    color: white;
+}
+address>a{
+    text-decoration: none;
+}
+.col-1-2{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+.col-1-2>h2{
+    text-align: left;
+}
+#contact-icons{
+    text-align: left;
+    margin-bottom: 5%;
+}
+#contact-icons>a{
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    line-height: 60px;
+    margin: 0 4% 0 0;
+    border-radius: 50%;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+/*
+#contact-icons>a>i{
+    width: 7%;
+    height: 7%;
+    margin: 0 4% 0 0;
+    border: 1px white solid;
+    text-align: center;
+}
+*/
+#contact-icons>a:hover{
+    background-color: white;
+    color: #213b50 !important;
+}
+
+/*Footer styles*/
+footer{
+    background-color: black;
+    
+}
+footer>p{
+    color: white;
+    margin: 0;
+}

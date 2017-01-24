@@ -2,47 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ZADANIE</title>
+    <title>Mateusz Mółka Portfolio</title>
     
-    <link rel="shortcut icon" href="images/0341_Kurs_Angular_JS_1_X_Podstawy_Podstaw.png" />
-    <link rel="stylesheet" href="css/style.css">
+<!--    top bar icon-->
+    <link rel="shortcut icon" href="icons/angular.png" />
+<!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i|Roboto:100,300,400,500,700,900" rel="stylesheet">
+<!--    main styles-->
+     <link rel="stylesheet" href="css/style.css">
+<!--    awsome fonts-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-          <form action="https://formspree.io/b.0910.molmat@gmail.com"
-      method="POST">
-      
-        <label for="name">Name</label><br>
-        <input id="name" type="text" name="Name" ><br>
-
-        <label for="surname">Surname</label><br>
-        <input id="surname" type="text" name="Surname"><br>
-
-        <label for="e-mail">E-mail</label><br>
-        <input id="e-mail" type="email" name="E-mail"><br>
-
-        <label for="phonenumber">Phone number</label><br>
-        <input id="phonenumber" type="tel" name="Phone Number"><br>
-        
-        <label for="miasto">Choose your city</label><br>
-        <select id="miasto" name="City">
-          <option value="Kraków">Kraków</option>
-          <option value="Warszawa">Warszawa</option>
-          <option value="Gdańsk">Gdańsk</option>
-        </select><br><br>
-
-        <input type="radio" name="Gender" value="male" checked> Male<br>
-        <input type="radio" name="Gender" value="female"> Female<br>
-        <input type="radio" name="Gender" value="other"> Other<br><br>
-
-        <input type="checkbox" name="permission" value="True"> Do you agree to share your personal data?<br><br>    
-
-        <label for="message">Message</label><br>
-        <textarea name="Message" id="message" cols="30" rows="10"></textarea><br>
-
-        <input type="submit" value="Send">
-
-        </form> 
-      
-  
+<!--    Navigation starts-->
+    <nav id="navigation-bar">
+        <ul>
+            <li class="top-menu-item"><a href="">o mnie</a></li>
+            <li class="top-menu-item"><a href="">umiejętności</a></li>
+            <li class="top-menu-item"><a href="">portfolio</a></li>
+            <li class="top-menu-item"><a href="">kontakt</a></li>
+        </ul>
+    </nav>
+<!--  Navigation ends -->
+<!--  Header starts-->
+    <section id="main-header-section">
+        <header id="name-surname-header">
+            <h1 id="main-header-heading">Mateusz <span>Mółka</span></h1>
+            <h2 id="second-header-heading">Front-End Developer</h2>
+        </header>
+    </section>
+<!-- Header ends -->
+<!-- About me starts-->
+    <section id="section-about-me">
+        <h2 id="header-about-me">O <span>mnie</span></h2>
+        <div class="about-me-50-50">
+            <img src="img/jan-nowak.jpg" alt="">
+        </div>
+           <div class="about-me-50-50 about-text-50-50">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatibus odit asperiores commodi ducimus, labore, ipsa consequuntur blanditiis totam vero illo, exercitationem dolor nam doloremque unde quas! Velit, quod, molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum omnis tempora necessitatibus iusto earum voluptatibus modi atque nesciunt, ab sunt accusamus nostrum non harum soluta, aut, repudiandae debitis vel optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tempore omnis quam. Maiores corporis temporibus dolores cumque quae sit perferendis inventore totam et. Provident, officiis, consequatur? Amet nam, possimus laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos qui, aliquam fuga atque nihil similique quas incidunt delectus laborum hic eos corporis ut modi aut. Rerum quasi exercitationem delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis similique pariatur laboriosam illum inventore quae dignissimos fugiat nulla. Itaque exercitationem unde cum eaque cupiditate ducimus iure obcaecati dicta recusandae?
+        </div>
+    </section>
+<!-- About me ends-->
+<!-- My skills starts-->
+    <section id="my-skills">
+        <h2 id="my-skills-header">Moje <span>umiejętności</span></h2>
+        <p id="my-skills-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, commodi, beatae. Asperiores ipsa et unde eum incidunt a earum rem, laboriosam itaque officiis? Quis accusantium, suscipit, rem ipsam molestias ab! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nisi inventore nobis, quaerat debitis id explicabo quos quisquam odio hic praesentium ipsa sequi a, facere. Laudantium natus quibusdam, ea voluptate.</p>
+        <div id="my-skills-icons">
+            <figure class="icon-plus-label">
+                <img class="img-skills" src="icons/html5.png" alt="">
+                <figcapture>HTML 5</figcapture>
+            </figure>
+            <figure class="icon-plus-label">
+                <img class="img-skills" src="icons/css3.png" alt="">
+                <figcapture>CSS3</figcapture>
+            </figure>
+            <figure class="icon-plus-label">
+                <img class="img-skills" src="icons/js.png" alt="">
+                <figcapture>JavaScript</figcapture>
+            </figure>
+            <figure class="icon-plus-label">
+                <img class="img-skills" src="icons/jquery.png" alt="">
+                <figcapture>jQuerry</figcapture>
+            </figure>
+        </div>
+    </section>
+<!-- My skills ends-->
+<!-- My portfolio starts-->
+    <section id="my-portfolio">
+        <h2 id="my-portfolio-header">Moje <span>portfolio</span></h2>
+        <div id="my-portfolio-items">
+            <div class="portfolio-item" id="my-portfolio-image-1">
+                <div class="portfolio-item-mask">
+                    <div class="portfolio-item-mask-frame">
+                       <div class="portfolio-item-mask-frame-text">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eos mollitia deleniti qui labore voluptatibus.</p>
+                        <h4>Wykorzystane technologie</h4>
+                        <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuerry</p>
+                        <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
+                       </div>
+                    </div>
+                </div>
+            </div>
+           <div class="portfolio-item" id="my-portfolio-image-2">
+                <div class="portfolio-item-mask">
+                    <div class="portfolio-item-mask-frame">
+                        <div class="portfolio-item-mask-frame-text">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eos mollitia deleniti qui labore voluptatibus.</p>
+                        <h4>Wykorzystane technologie</h4>
+                        <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuerry</p>
+                        <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
+                       </div>
+                    </div>
+                </div>
+            </div><div class="portfolio-item" id="my-portfolio-image-3">
+                <div class="portfolio-item-mask">
+                    <div class="portfolio-item-mask-frame">
+                        <div class="portfolio-item-mask-frame-text">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eos mollitia deleniti qui labore voluptatibus.</p>
+                        <h4>Wykorzystane technologie</h4>
+                        <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuerry</p>
+                        <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- My portfolio ends-->
+<!-- Contact data starts-->
+    <div id="contact-container">
+       <section class="contact-section">
+           <div class="col-1-2">
+               <h2>
+                   Mateusz <span>Mółka</span>
+               </h2>
+               <address>
+                   ul. Krakowska 19/06<br>
+                   31-217 Kraków<br><br>
+                   
+                   tel. 999 999 999<br>
+                   <a href="mailto:mati@wp.pl"><span>example@example.pl</span></a><br>
+               </address>
+               <br> <br>
+               <div id="contact-icons">
+                    <a href="">
+                        <i class="fa fa-facebook " aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-google-plus-official " aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                         <i class="fa fa-twitter " aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-linkedin " aria-hidden="true"></i>
+                    </a>
+               </div>
+           </div><div class="col-1-2">
+               <h2>
+                   Mateusz <span>Mółka</span>
+               </h2>
+               
+           </div>
+       </section>
+    </div>
+<!-- Contact data ends-->
+<!-- Footer starts-->
+    <footer>
+        <p>Copyright &copy; Mateusz Mółka<p>
+    </footer>
+<!-- Footer ends-->
 </body>
 </html>
