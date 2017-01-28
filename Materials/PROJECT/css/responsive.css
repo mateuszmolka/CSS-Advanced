@@ -1,0 +1,95 @@
+@media all and (max-width: 1200px){
+    #my-portfolio-items>.portfolio-item{
+        display: inline-block;
+        width: 50%;
+        transition: 1s width ease; 
+    }
+    #my-portfolio-items>.portfolio-item:last-child{
+        display: inline-block;
+        width: 100%;
+        transition: 1s width ease; 
+    }
+}
+@media all and (max-width: 768px){
+/*    Navigation styles*/
+    nav{
+        overflow: auto;
+        height: initial;
+    }
+    nav>ul{
+        margin:0;
+    }
+    nav>ul>.top-menu-item{
+        display: block;
+        padding: 10px; 
+    }
+    nav>.toggle{
+/*        Responsive menu style*/
+        display: block;
+        color: #1ac056;
+        text-align: right;
+        padding: 15px; 
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    nav>ul{
+        display: none;
+    }
+    #navigation-bar #drop:checked + ul{
+        display: block;
+    }
+/*     Navigation styles END*/
+/*   Header styles */
+    #main-header-heading{
+       font-size: 3em;
+    }
+    #second-header-heading{
+        font-size: 1.5em;
+    }
+/*   Header styles end*/
+/*    About me styles*/
+    .about-me-50-50{
+        width: 100%;
+        padding: 0% 5%;
+        transition: 1s width ease;  
+    }
+/*    About me styles end*/
+/*Portfolio starts*/
+    #my-portfolio-items>.portfolio-item{
+        display: inline-block;
+        width: 100%;
+        transition: 1s width ease; 
+    }
+/*Portfolio ends*/
+/*   Contact styles start*/
+    div#contact-container{
+        overflow: auto;
+        height: 100vh;
+    }
+    .col-1-2{
+        width: 100%;
+        text-align: center;
+    }
+    .col-1-2>h2{
+        text-align: center;
+    }
+    #contact-icons{
+        text-align: center;
+    }
+    
+/*   Contact styles ends*/
+}
+
+@media all and (max-width: 680px){
+    /*   About me styles */
+    #main-header-heading{
+       font-size: 2.5em;
+    }
+    #second-header-heading{
+        font-size: 1.5em;
+    }
+/*   About me styles end*/
+}
+@media all and (max-width: 480px){
+    
+}
