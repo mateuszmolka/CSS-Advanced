@@ -31,13 +31,14 @@ a{
 }
 /*top bar navigation styles*/
 nav{
-    background-color: white;
+    background-color: rgba(255,255,255,0);
     width: 100%;
     position: fixed;
     z-index: 99999;
     height: 3.5em;
-    opacity:  0;
     position:  absolute;
+    text-decoration: none;
+    color: white;
     transition: all 1s ease;
 }
 nav>ul{
@@ -53,11 +54,10 @@ nav>ul>.top-menu-item{
 nav>ul>.top-menu-item>a{
     text-decoration: none;
     color: white;
-/*    color: #1ac056;*/
     transition: all 1s ease;
 }
 nav>ul>.top-menu-item>a:hover{
-    color: black;
+    color: #1ac056;
 }
 
 
@@ -354,3 +354,15 @@ footer>p{
     color: #f9fcfe;
     margin: 0;
 }
+/**/
+.under{
+    position: fixed;
+    background-color: rgba(255,255,255,1);
+}
+nav>ul>.top-menu-item>a.under-a{
+      color: #1ac056;
+}
+nav>ul>.top-menu-item>a.under-a:hover{
+      color: black;
+}
+
